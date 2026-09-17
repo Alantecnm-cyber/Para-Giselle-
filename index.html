@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Para Giselle ♡</title>
+<meta name="theme-color" content="#f6f2ed">
+<style>
+:root{--bg:#f6f2ed;--ink:#292622;--muted:#756e67;--line:#ddd4ca;--card:#fffdfa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:560px;margin:auto;padding:18px 16px 40px}
+.screen{min-height:calc(100vh - 36px);display:none;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:34px 18px}
+#s1{display:flex}
+.screen:target{display:flex}
+.screen:target~#s1{display:none}
+.tiny{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.serif{font-family:Georgia,"Times New Roman",serif}
+h1{font-family:Georgia,serif;font-size:clamp(64px,19vw,105px);line-height:.84;letter-spacing:-.065em;margin:18px 0}
+h2{font-family:Georgia,serif;font-weight:400;font-size:34px;line-height:1.08;margin:12px 0 18px}
+p{max-width:480px;color:var(--muted);line-height:1.8;margin:10px auto}
+.next{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;border:1px solid #bdb4aa;background:#292724;color:#fff;text-decoration:none;font-weight:650;margin-top:24px}
+.heart{font-size:38px;margin:10px 0}
+.number{font-family:Georgia,serif;font-size:82px;letter-spacing:-.06em;margin:10px 0}
+.photo{width:min(100%,410px);height:430px;border-radius:24px;overflow:hidden;margin:20px auto;box-shadow:0 12px 35px rgba(30,25,20,.10)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.card{width:min(100%,490px);padding:20px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:20px;margin:9px 0}
+.card strong{display:block;margin-bottom:7px}.card span{color:var(--muted);line-height:1.65}
+.music{width:min(100%,490px);display:flex;align-items:center;gap:14px;padding:17px;background:var(--card);border:1px solid var(--line);border-radius:20px;margin:20px 0;text-align:left}
+.disc{width:52px;height:52px;border-radius:50%;background:#292724;color:#fff;display:grid;place-items:center;flex:none}
+.dots{display:flex;gap:7px;margin:25px 0}.dot{width:6px;height:6px;border-radius:50%;background:#d5ccc3}.dot.on{background:#292724}
+.note{border-top:1px solid var(--line);padding-top:24px;margin-top:25px}
+.fade{animation:fade .55s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade{animation:none}}
+</style>
+</head>
+<body>
+<main>
+
+<section class="screen" id="s1">
+  <div class="tiny">Has encontrado algo para ti</div>
+  <div class="heart">♡</div>
+  <h1>Giselle</h1>
+  <p>Hay algo que quería enseñarte… pero creo que es mejor descubrirlo poco a poco.</p>
+  <a class="next" href="#s2">Abrir →</a>
+</section>
+
+<section class="screen" id="s2">
+  <div class="tiny fade">Todo comenzó aquí</div>
+  <div class="number fade">12.09</div>
+  <div class="serif fade" style="font-size:23px;font-style:italic">El día que nos vimos por primera vez.</div>
+  <div class="dots"><i class="dot on"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+  <p class="fade">Y aunque ha pasado poco tiempo, hay algo que me resulta curioso…</p>
+  <a class="next" href="#s3">Descubrir →</a>
+</section>
+
+<section class="screen" id="s3">
+  <div class="tiny fade">Una sensación difícil de explicar</div>
+  <div class="photo fade"><img src="giselle.jpg" alt="Giselle"></div>
+  <h2 class="fade">Como si ya te conociera.</h2>
+  <p class="fade">No tenemos una historia enorme detrás. Apenas estamos empezando. Pero desde nuestras primeras conversaciones todo se sintió demasiado natural.</p>
+  <p class="fade">Como si simplemente hubiéramos coincidido en el momento correcto.</p>
+  <a class="next" href="#s4">Seguir →</a>
+</section>
+
+<section class="screen" id="s4">
+  <div class="tiny fade">Pequeñas cosas que he descubierto</div>
+  <h2 class="fade">Me gusta conocerte.</h2>
+  <div class="card fade"><strong>☕ Tus gustos</strong><span>Las cosas que disfrutas, los lugares que te gustan y esos pequeños detalles que poco a poco voy descubriendo.</span></div>
+  <div class="card fade"><strong>💬 Nuestras conversaciones</strong><span>Es curioso cómo podemos empezar hablando de cualquier cosa y terminar queriendo seguir hablando un rato más.</span></div>
+  <div class="card fade"><strong>✨ Esa conexión</strong><span>Esa sensación de que todo fluye sin tener que forzarlo.</span></div>
+  <a class="next" href="#s5">Hay una canción… →</a>
+</section>
+
+<section class="screen" id="s5">
+  <div class="tiny fade">Nuestra pequeña banda sonora</div>
+  <h2 class="fade">Esta me hizo pensar en ti.</h2>
+  <div class="music fade"><div class="disc">♪</div><div><strong>Mi Mayor Anhelo</strong><div style="font-size:13px;color:var(--muted);margin-top:3px">Banda MS</div></div></div>
+  <p class="fade">No porque ya tengamos una historia de años… sino porque quizá algunas canciones llegan justo cuando empieza una historia que todavía no sabemos hasta dónde llegará.</p>
+  <p class="serif fade" style="font-style:italic;font-size:21px">Y eso es precisamente lo bonito.</p>
+  <a class="next" href="https://open.spotify.com/search/Mi%20Mayor%20Anhelo%20Banda%20MS" target="_blank" rel="noopener">Escuchar ♪</a>
+  <a class="next" href="#s6">Última parte →</a>
+</section>
+
+<section class="screen" id="s6">
+  <div class="tiny fade">Y ahora sí…</div>
+  <div class="heart fade">♡</div>
+  <h2 class="fade">Esto apenas comienza.</h2>
+  <p class="fade">Todavía no tenemos cientos de fotos, ni años de recuerdos, ni una historia que contar completa.</p>
+  <p class="fade">Tenemos algo mucho más sencillo:</p>
+  <div class="serif fade" style="font-size:24px;font-style:italic;margin:18px 0">un comienzo que se sintió especial desde el principio.</div>
+  <p class="fade"><strong>12 de septiembre.</strong></p>
+  <p class="fade">Y quién sabe… quizá algún día volvamos a esta página y nos dé risa pensar que todo empezó con un QR.</p>
+  <div class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot on"></i></div>
+  <div class="serif fade" style="font-size:25px;font-style:italic">Para ti, Giselle. 🤍</div>
+  <div class="note"><p style="font-size:13px">Lo mejor de esta historia todavía no está escrito.</p></div>
+</section>
+
+</main>
+</body>
+</html>
